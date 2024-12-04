@@ -29,7 +29,7 @@ export function PokemonCard({ pokemon }: Props) {
   return (
     <Link
       to={`/pokemon/${pokemon.id}`}
-      className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+      className={`block ${collected ? "bg-gradient-to-tr to-white from-slate-500" : "bg-white"} rounded-lg shadow-md hover:shadow-lg transition-shadow`}
     >
       <div className="relative p-4">
         <button

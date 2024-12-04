@@ -42,7 +42,7 @@ export function PokemonDetail() {
         Back to Pokédex
       </Link>
       
-      <div className="bg-white rounded-lg shadow-lg p-8">
+      <div className={`${collected ? "bg-gradient-to-tr to-white from-slate-500 " : "bg-white"} transition-colors  duration-700 rounded-lg shadow-lg p-8`}>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2">
             <img
